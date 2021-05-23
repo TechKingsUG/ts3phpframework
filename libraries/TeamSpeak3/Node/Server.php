@@ -2018,7 +2018,7 @@ class TeamSpeak3_Node_Server extends TeamSpeak3_Node_Abstract
    *
    * @deprecated
    */
-  public function tokenCreate($type = TeamSpeak3::TOKEN_SERVERGROUP, $id1, $id2 = 0, $description = null, $customset = null)
+  public function tokenCreate($id1, $type = TeamSpeak3::TOKEN_SERVERGROUP, $id2 = 0, $description = null, $customset = null)
   {
     return $this->privilegeKeyCreate($type, $id1, $id2, $description, $customset);
   }
