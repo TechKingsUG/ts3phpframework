@@ -2033,7 +2033,7 @@ class TeamSpeak3_Node_Server extends TeamSpeak3_Node_Abstract
    * @param  string  $customset
    * @return TeamSpeak3_Helper_String
    */
-  public function privilegeKeyCreate($type = TeamSpeak3::TOKEN_SERVERGROUP, $id1, $id2 = 0, $description = null, $customset = null)
+  public function privilegeKeyCreate($id1, $type = TeamSpeak3::TOKEN_SERVERGROUP, $id2 = 0, $description = null, $customset = null)
   {
     $token = $this->execute("privilegekeyadd", array("tokentype" => $type, "tokenid1" => $id1, "tokenid2" => $id2, "tokendescription" => $description, "tokencustomset" => $customset))->toList();
 
